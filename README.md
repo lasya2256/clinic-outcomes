@@ -6,8 +6,11 @@ This project is a clinical outcomes dashboard that visualizes patient blood gluc
 The dashboard supports data views over 30, 60, or 90 days, giving healthcare providers flexibility in monitoring outcomes:
 
 •	30 days: Short-term snapshot, useful after therapy changes or medication adjustments.
+
 •	60 days: Mid-term view that balances daily fluctuations while showing emerging trends.
+
 •	90 days: Aligns with the standard A1C test period, enabling direct comparison between dashboard results and lab tests.
+
 Together, these views support immediate follow-up, medium-term monitoring, and long-term treatment planning.
 
 **What the Graphs Explain:**
