@@ -7,6 +7,7 @@ The dashboard supports data views over 30, 60, or 90 days, giving healthcare pro
 •	60 days: Mid-term view that balances daily fluctuations while showing emerging trends.
 •	90 days: Aligns with the standard A1C test period, enabling direct comparison between dashboard results and lab tests.
 Together, these views support immediate follow-up, medium-term monitoring, and long-term treatment planning.
+
 **What the Graphs Explain:**
 
 **1. Time in Range (TIR) Chart - Blood Glucose Control**
