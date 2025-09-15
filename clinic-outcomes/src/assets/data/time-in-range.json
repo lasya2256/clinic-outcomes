@@ -1,0 +1,6 @@
+{
+  "labels": ["0-70", "70-180", "180-250", ">250"],
+  "datasets": [
+    { "label": "Time in Range %", "data": [5, 70, 20, 5], "backgroundColor": "steelblue" }
+  ]
+}

@@ -1,0 +1,59 @@
+/* components/gmi-chart/gmi-chart.component.css */
+.gmi-chart {
+  text-align: center;
+  padding: 15px;
+}
+
+.average-gmi {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.average-gmi .label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.average-gmi .value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.chart-container {
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.gmi-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gmi-item {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
+
+.gmi-percentage {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 3px;
+}
+
+.gmi-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}

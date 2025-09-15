@@ -1,0 +1,64 @@
+/* components/time-in-range-chart/time-in-range-chart.component.css */
+.time-in-range-chart {
+  padding: 15px;
+}
+
+.chart-container {
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.ranges-section {
+  margin-bottom: 20px;
+}
+
+.ranges-container {
+  text-align: center;
+}
+
+.ranges-header {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.ranges {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.range-value {
+  font-size: 11px;
+  color: #666;
+  font-weight: 500;
+}
+
+.percentage-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.percentage-item {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
+
+.percentage-value {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 3px;
+}
+
+.percentage-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}

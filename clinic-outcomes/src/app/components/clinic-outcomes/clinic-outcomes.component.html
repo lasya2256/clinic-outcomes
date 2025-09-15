@@ -1,0 +1,44 @@
+<!-- components/clinic-outcomes/clinic-outcomes.component.html -->
+<div class="clinic-outcomes">
+  <div class="header">
+    <h1>Clinic Outcomes</h1>
+    
+    <div class="time-periods">
+      <span 
+        *ngFor="let period of ['30 days', '60 days', '90 days']"
+        class="time-period"
+        [class.active]="selectedPeriod === period"
+        (click)="selectTimePeriod(period)">
+        {{ period }}
+      </span>
+    </div>
+  </div>
+  
+  <div *ngIf="loading$ | async" class="loading">
+    Loading clinic outcomes data...
+  </div>
+  
+  <div *ngIf="error$ | async as error" class="error">
+    Error loading data: {{ error }}
+  </div>
+  
+  <div *ngIf="!(loading$ | async) && !(error$ | async)">
+    <div class="info-bar">
+      Showing {{ patientCount$ | async }} patients from last 30 days of available data from {{ dateRange$ | async }}
+      <br>
+      <small>*Only patients with a minimum of 10 days of SG data are included. Last updated on {{ lastUpdated$ | async }}</small>
+    </div>
+    
+    <div class="charts-container">
+      <div class="chart-section">
+        <h2>Time in range</h2>
+        <app-time-in-range-chart [data]="timeInRangeData$ | async"></app-time-in-range-chart>
+      </div>
+      
+      <div class="chart-section">
+        <h2>Glucose Management Indicator (GMI)</h2>
+        <app-gmi-chart [data]="gmiData$ | async"></app-gmi-chart>
+      </div>
+    </div>
+  </div>
+</div>

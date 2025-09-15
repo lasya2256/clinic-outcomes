@@ -1,0 +1,26 @@
+<!-- components/gmi-chart/gmi-chart.component.html -->
+<div class="gmi-chart">
+  <div class="average-gmi">
+    <div class="label">AVERAGE GMI</div>
+    <div class="value">{{ data?.average }}%</div>
+  </div>
+  
+  <div class="chart-container">
+    <canvas #chartCanvas></canvas>
+  </div>
+  
+  <div class="gmi-breakdown">
+    <div class="gmi-item">
+      <span class="gmi-percentage">{{ data?.below7 }}%</span>
+      <span class="gmi-label"><7%</span>
+    </div>
+    <div class="gmi-item">
+      <span class="gmi-percentage">{{ data?.between7and8 }}%</span>
+      <span class="gmi-label">7-8%</span>
+    </div>
+    <div class="gmi-item">
+      <span class="gmi-percentage">{{ data?.above8 }}%</span>
+      <span class="gmi-label">≥8%</span>
+    </div>
+  </div>
+</div>

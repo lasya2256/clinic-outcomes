@@ -1,0 +1,27 @@
+<!-- components/time-in-range-chart/time-in-range-chart.component.html -->
+<div class="time-in-range-chart">
+  <div class="chart-container">
+    <canvas #chartCanvas></canvas>
+  </div>
+  
+  <div class="ranges-section">
+    <div class="ranges-container">
+      <div class="ranges-header">mg/dL</div>
+      <div class="ranges">
+        <span *ngFor="let range of data?.ranges" class="range-value">{{ range }}</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="percentage-labels">
+    <div class="percentage-item" *ngFor="let item of [
+      {value: data?.veryLow, label: 'Very Low'},
+      {value: data?.low, label: 'Low'}, 
+      {value: data?.inRange, label: 'In Range'},
+      {value: data?.high, label: 'High'}
+    ]">
+      <span class="percentage-value">{{ item.value }}%</span>
+      <span class="percentage-label">{{ item.label }}</span>
+    </div>
+  </div>
+</div>

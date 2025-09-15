@@ -1,0 +1,6 @@
+{
+  "labels": ["GMI"],
+  "datasets": [
+    { "data": [7, 93], "backgroundColor": ["#ff6384", "#36a2eb"] }
+  ]
+}
