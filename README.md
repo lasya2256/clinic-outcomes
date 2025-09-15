@@ -28,21 +28,32 @@ Four distinct categories:
 Clinical significance: Each bar represents a different risk category for diabetes patients.
 
 **Y-Axis (Vertical): Percentage of Time:**
+
 Represents: The percentage of time patients spend in each glucose range
 Scale: 0% to 100% (typically 0-100% with markers at 20% intervals)
+
 **Ideal targets:**
+
 •	>70% Time in Range (Green zone) - Well controlled
+
 •	<4% Time Low - Minimal hypoglycemia risk
+
 •	<25% Time High - Reduced complication risk
+
 Our data shows: 82% in range (excellent), but 1% very low (needs attention)
 ________________________________________
 
 **2. Glucose Management Indicator (GMI) - Estimated A1C**
+
 What it measures: Estimated average glucose over 3 months (similar to A1C blood test)
 Clinical significance:
+
 •	<7.0%: Excellent diabetes control (reduced complication risk)
+
 •	7.0-8.0%: Good control (target for many patients)
+
 •	>8.0%: Needs improvement (increased complication risk)
+
 Our data shows: 6.7% average (excellent), with 72% of patients <7%
 
 **Technical Stack:**
